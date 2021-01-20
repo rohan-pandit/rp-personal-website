@@ -1,0 +1,131 @@
+html, body {
+
+	font-family: 'Noto Sans JP', sans-serif !important;
+
+	margin: 0;
+
+	padding: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+
+
+body.dark-mode {
+
+	background: black;
+
+}
+
+.dark-mode #personal-summary {
+
+}
+
+.dark-mode #about {
+
+}
+
+.dark-mode #section3 {
+
+}
+
+.dark-mode #section4 {
+
+}
+
+body.light-mode {
+
+	background: white;
+
+
+}
+
+.light-mode #personal-summary {
+
+}
+
+.light-mode #about {
+
+}
+
+.light-mode #section3 {
+
+}
+
+.light-mode #section4 {
+
+}
+
+.background {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	padding-top: 50px;
+}
+
+.dark-background.background {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	padding-top: 50px;
+}
+
+.light-background.background {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	padding-top: 50px;
+}
+
+.navbar {
+	z-index: 10;
+	max-width: 100%;
+    width: 100%;
+    position: sticky !important;
+    position: fixed !important;
+}
+
+section {
+  height: 100vh;
+  padding-top: 100px;
+}
+
+#about {
+	background: #E8E8E8;
+}
+
+#section3 {
+	background: #FFFFFF;
+}
+
+#section4 {
+	background: #D8D8D8;
+}
+
+
+canvas {
+
+}
+
+
+/*
+
+potential body background colors:
+
+    background: #F0F8FF;
+    background: #6699CC;
+    background: #034694;
+    background: #002147;
+    background: lavendar;
+*/
+

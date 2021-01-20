@@ -1,42 +1,13 @@
-<style> 
-html, body {
-
-font-family: 'Noto Sans JP', sans-serif !important;
-
-margin: 0;
-
-padding: 0;
-}
-.background {
-
-position: absolute;
-
-display: block;
-top: 0;
-left: 0;
-z-index: 0;
-padding-top: 50px;
-}
-
-.navbar {
-	z-index: 10;
-	max-width: 100%;
-    width: 100%;
-    position: sticky !important;
-    position: fixed !important;
-}
-
-section {
-	height: 500px;
-
-}
-</style>
+<!DOCTYPE html>
+<html>
         <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="css/custom-styles.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -45,15 +16,21 @@ section {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+
+
+
+
         </head>
-	<header>
-		<!--<div class="container-fluid">
-			<div class="row">
-				<div class="col">
-				</div>
-			</div>
-		</div>-->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <body class="light-mode">
+        <header>
+    <!--<div class="container-fluid">
+      <div class="row">
+        <div class="col">
+        </div>
+      </div>
+    </div>-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="/">RP</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -65,7 +42,7 @@ section {
         <a class="nav-link" href="#personal-summary">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-	      <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#about">About</a>
       </li>
       <!--<li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -94,8 +71,7 @@ section {
     </form>-->
   </div>
 </nav>
-	</header>
-        <body>
+  </header>
 		<section id="personal-summary">
 			<div class="container-fluid">
 				<div class="row">
@@ -108,6 +84,7 @@ section {
                         <div class="container-fluid">
                                 <div class="row">
                                         <div class="col">
+                                          About Section
                                         </div>
                                 </div>
                         </div>
@@ -116,6 +93,7 @@ section {
                         <div class="container-fluid">
                                 <div class="row">
                                         <div class="col">
+                                          Section 3
                                         </div>
                                 </div>
                         </div>
@@ -124,30 +102,31 @@ section {
                         <div class="container-fluid">
                                 <div class="row">
                                         <div class="col">
+                                          Section 4
                                         </div>
                                 </div>
                         </div>
                 </section>
 
+<div id="button" class="mode-toggle"> 
+                    Toggle color
+                </div>
+
+                <!--<div id="particles-js"></div>-->
+
+       
+                    <!--<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+      <canvas class="light-background background"></canvas>
+
+    <script src="js/custom.js"></script>
+
         </body> 
 
-        <canvas class="background"></canvas>
 
-	<script>
-	window.onload = function() {
- 		Particles.init({
-   		 selector: '.background', connectParticles: 'true'
-  		});	
-	};
+                      
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+    
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-	</script>
 </html> 
