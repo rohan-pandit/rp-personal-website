@@ -130,6 +130,25 @@ section {
   padding-top: 100px;
 }
 
+#personal-summary {
+
+}
+
+#personal-summary .row {
+	margin-top: 45px;
+}
+
+#personal-summary h1 {
+	font-size: 4rem;
+	text-align: center;
+}
+
+#personal-summary h3 {
+	font-size: 1.5rem;
+	text-align: center;
+	margin-top: 30px;
+}
+
 #about {
 	background: #E8E8E8;
 }
