@@ -21,6 +21,8 @@ var particle;
   $('.mode-toggle').on('click', function() {
 
       $('body').toggleClass("light-mode dark-mode");
+      $('.navbar').toggleClass('bg-light bg-dark');
+      $('.navbar').toggleClass('navbar-light navbar-dark');
       if($('body.light-mode').length > 0){
         particle = "";
 
