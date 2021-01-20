@@ -92,7 +92,7 @@ var particle;
            selector: '.background', 
            connectParticles: 'true', 
            color: '#FFFFFF',
-                    responsive: [
+           responsive: [
          {
             breakpoint: 768,
             options: {

@@ -135,7 +135,7 @@ section {
 }
 
 #personal-summary .row {
-	margin-top: 45px;
+	margin-top: 105px;
 }
 
 #personal-summary h1 {
@@ -147,6 +147,8 @@ section {
 	font-size: 1.5rem;
 	text-align: center;
 	margin-top: 30px;
+	line-height: 1.5;
+    letter-spacing: 1px;
 }
 
 #about {
@@ -163,7 +165,13 @@ section {
 
 
 canvas {
+	opacity: 0.5;
+}
 
+@media (max-width: 769px) {
+	#personal-summary .row {
+		margin-top: 0px;
+	}
 }
 
 
