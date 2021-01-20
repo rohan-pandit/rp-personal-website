@@ -18,7 +18,34 @@ body {
 body.dark-mode {
 
 	background: black;
+	-webkit-transition: background 1000ms linear;
+    -ms-transition: background 1000ms linear;
+    transition: background 1000ms linear;
 
+}
+
+body .navbar.bg-light{
+	-webkit-transition: background-color 1000ms linear !important;
+    -ms-transition: background-color 1000ms linear !important;
+    transition: background-color 1000ms linear !important;
+}
+
+body .navbar.bg-dark{
+	-webkit-transition: background-color 1000ms linear !important;
+    -ms-transition: background-color 1000ms linear !important;
+    transition: background-color 1000ms linear !important;
+}
+
+body .navbar.navbar-light{
+	-webkit-transition: background-color 1000ms linear !important;
+    -ms-transition: background-color 1000ms linear !important;
+    transition: background-color 1000ms linear !important;
+}
+
+body .navbar.navbar-dark{
+	-webkit-transition: background-color 1000ms linear !important;
+    -ms-transition: background-color 1000ms linear !important;
+    transition: background-color 1000ms linear !important;
 }
 
 .dark-mode #personal-summary {
@@ -40,6 +67,9 @@ body.dark-mode {
 body.light-mode {
 
 	background: white;
+	-webkit-transition: background 1000ms linear;
+    -ms-transition: background 1000ms linear;
+    transition: background 1000ms linear;
 
 
 }
