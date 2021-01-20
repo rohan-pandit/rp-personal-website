@@ -20,7 +20,12 @@ var particle;
 
   $('.mode-toggle').on('click', function() {
 
-      $('body').toggleClass("light-mode dark-mode");
+//window.setTimeout(function() {
+       $('body').toggleClass("light-mode dark-mode");
+      $('.navbar').toggleClass('bg-light bg-dark');
+      $('.navbar').toggleClass('navbar-light navbar-dark');
+    //}, 250);
+    
       if($('body.light-mode').length > 0){
         particle = "";
 
