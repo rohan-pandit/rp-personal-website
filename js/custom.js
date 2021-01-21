@@ -1,27 +1,15 @@
 $(document).ready(function () {
 
-  window.addEventListener('load', function(){
-  new Glider(document.querySelector('.glider'), {
-      slidesToShow: 1,
-      dots: '#dots',
-      draggable: true,
-      arrows: {
-        prev: '.glider-prev',
-        next: '.glider-next'
-      }
-  })
-});
 
-
-$('#carouselExampleControls').on('slid.bs.carousel', function () {
-    $('.modal').scrollTop(0);
-});
 var particle;
 
  window.onload = function() {
    		particle = Particles.init({
      		 selector: '.background', 
-         connectParticles: 'true', 
+         connectParticles: 'true',
+         speed: '.25',
+         sizeVariations: '5',
+         // minDistance: '200',
          responsive: [
          {
             breakpoint: 768,
@@ -59,6 +47,11 @@ var particle;
       });
   });
 
+
+  $('#easter-egg').on('click', function () {
+    alert('Victoria is a cunt');
+  });
+
   $('.mode-toggle').on('click', function() {
 
 //window.setTimeout(function() {
@@ -77,6 +70,8 @@ var particle;
          selector: '.background', 
          connectParticles: 'true', 
          color: '#000000',
+         speed: '.25',
+
         responsive: [
          {
             breakpoint: 768,
@@ -101,8 +96,7 @@ var particle;
             }
           }
         ]
-      }); 
- 
+      });
     
       } else {
           particle = "";
@@ -111,6 +105,8 @@ var particle;
            selector: '.background', 
            connectParticles: 'true', 
            color: '#FFFFFF',
+           speed: '.25',
+
            responsive: [
          {
             breakpoint: 768,

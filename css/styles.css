@@ -118,9 +118,11 @@ html {
         html body #personal-interests .personal-interests-container img {
           max-width: 70%; } }
     html body #section3 {
-      background: #FFFFFF; }
+      background: #FFFFFF;
+      text-align: center; }
     html body #section4 {
-      background: #D8D8D8; }
+      background: #D8D8D8;
+      text-align: center; }
     html body canvas {
       opacity: 0.5; }
     html body footer {
