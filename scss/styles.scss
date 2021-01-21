@@ -1,0 +1,210 @@
+html {
+	height: 100%;
+	
+
+	body {
+		font-family: 'Noto Sans JP', sans-serif !important;
+		margin: 0;
+		padding: 0;
+		min-height: 100%;
+
+		.navbar {
+			z-index: 10;
+			max-width: 100%;
+		    width: 100%;
+		    position: sticky !important;
+		    position: fixed !important;
+		}
+
+		.dark-mode {
+			background: black;
+			-webkit-transition: background 1000ms linear;
+		    -ms-transition: background 1000ms linear;
+		    transition: background 1000ms linear;
+
+		    .navbar.bg-light{
+				-webkit-transition: background-color 1000ms linear !important;
+			    -ms-transition: background-color 1000ms linear !important;
+			    transition: background-color 1000ms linear !important;
+			}
+
+			.navbar.bg-dark{
+				-webkit-transition: background-color 1000ms linear !important;
+			    -ms-transition: background-color 1000ms linear !important;
+			    transition: background-color 1000ms linear !important;
+			}
+
+			.navbar.navbar-light{
+				-webkit-transition: background-color 1000ms linear !important;
+			    -ms-transition: background-color 1000ms linear !important;
+			    transition: background-color 1000ms linear !important;
+			}
+
+			.navbar.navbar-dark{
+				-webkit-transition: background-color 1000ms linear !important;
+			    -ms-transition: background-color 1000ms linear !important;
+			   
+			}
+		}
+
+		.light-mode {
+			background: white;
+			-webkit-transition: background 1000ms linear;
+		    -ms-transition: background 1000ms linear;
+		    transition: background 1000ms linear;
+
+		    .navbar.bg-light{
+				-webkit-transition: background-color 1000ms linear !important;
+			    -ms-transition: background-color 1000ms linear !important;
+			    transition: background-color 1000ms linear !important;
+			}
+
+			.navbar.bg-dark{
+				-webkit-transition: background-color 1000ms linear !important;
+			    -ms-transition: background-color 1000ms linear !important;
+			    transition: background-color 1000ms linear !important;
+			}
+
+			.navbar.navbar-light{
+				-webkit-transition: background-color 1000ms linear !important;
+			    -ms-transition: background-color 1000ms linear !important;
+			    transition: background-color 1000ms linear !important;
+			}
+
+			.navbar.navbar-dark{
+				-webkit-transition: background-color 1000ms linear !important;
+			    -ms-transition: background-color 1000ms linear !important;
+			   
+			}
+		}
+
+		.background {
+			position: absolute;
+			display: block;
+			top: 0;
+			left: 0;
+			z-index: 0;
+			padding-top: 50px;
+		}
+
+		.dark-background.background, .light-background.background, .background {
+			position: absolute;
+			display: block;
+			top: 0;
+			left: 0;
+			z-index: 0;
+			padding-top: 50px;
+		}
+
+		section {
+		  height: 100vh;
+		  padding-top: 100px;
+		}
+
+		#personal-summary {
+			.row {
+				margin-top: 105px;
+			}
+			h1 {
+				font-size: 4rem;
+				text-align: center;
+			}
+			h3 {
+				font-size: 1.5rem;
+				text-align: center;
+				margin-top: 30px;
+				line-height: 1.5;
+			    letter-spacing: 1px;
+			}
+
+			@media (max-width: 767px) { 
+				.row {
+					margin-top: 0px;
+				}
+			}
+		}
+
+		#personal-interests {
+			background: #E8E8E8;
+
+			.personal-interests-container {
+				text-align: center;
+			}
+
+			.personal-interests-container img {
+				max-width: 50%;
+				margin-bottom: 20px;
+			}
+
+			.personal-interests-container .carousel-inner {
+				padding-bottom: 45px;
+			}
+
+			.personal-interests-container .col:nth-of-type(even) {
+				margin-top: 150px;
+			}
+
+			@media (max-width: 767px) { 
+				.carousel-item p {
+					padding-left: 30px;
+					padding-right: 30px;
+				}
+
+				.personal-interests-container img {
+					max-width: 70%;
+				}
+
+			}
+		}
+
+		#section3 {
+			background: #FFFFFF;
+		}
+
+		#section4 {
+			background: #D8D8D8;
+		}
+
+
+		canvas {
+			opacity: 0.5;
+		}
+	}
+}
+
+
+/*@media (max-width: 575px) { ... }*/
+
+
+/*// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) { ... }
+
+@media (max-width: 575px) { ... }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }*/
+
+
+/*
+
+potential body background colors:
+
+    background: #F0F8FF;
+    background: #6699CC;
+    background: #034694;
+    background: #002147;
+    background: lavendar;
+*/
+
