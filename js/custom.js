@@ -65,6 +65,9 @@ var particle;
        $('body').toggleClass("light-mode dark-mode");
       $('.navbar').toggleClass('bg-light bg-dark');
       $('.navbar').toggleClass('navbar-light navbar-dark');
+      $('footer').toggleClass('bg-light bg-dark');
+       $('footer').toggleClass('navbar-light navbar-dark');
+
     //}, 250);
     
       if($('body.light-mode').length > 0){
