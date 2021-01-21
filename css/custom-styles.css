@@ -160,7 +160,12 @@ section {
 }
 
 #personal-interests .personal-interests-container img {
-	max-width: 100%;
+	max-width: 50%;
+	margin-bottom: 20px;
+}
+
+#personal-interests .personal-interests-container .carousel-inner {
+	padding-bottom: 45px;
 }
 
 #personal-interests .personal-interests-container .col:nth-of-type(even) {

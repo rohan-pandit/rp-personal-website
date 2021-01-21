@@ -1,5 +1,21 @@
 $(document).ready(function () {
 
+  window.addEventListener('load', function(){
+  new Glider(document.querySelector('.glider'), {
+      slidesToShow: 1,
+      dots: '#dots',
+      draggable: true,
+      arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next'
+      }
+  })
+});
+
+
+$('#carouselExampleControls').on('slid.bs.carousel', function () {
+    $('.modal').scrollTop(0);
+});
 var particle;
 
  window.onload = function() {
