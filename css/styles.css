@@ -131,9 +131,12 @@ html {
       height: 60px;
       line-height: 60px;
       background-color: #f5f5f5;
+      z-index: 10;
       -webkit-transition: background-color 1000ms linear !important;
       -ms-transition: background-color 1000ms linear !important;
       transition: background-color 1000ms linear !important; }
+      html body footer .mode-toggle {
+        float: right; }
 
 /*@media (max-width: 575px) { ... }*/
 /*// Medium devices (tablets, less than 992px)
