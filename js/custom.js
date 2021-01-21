@@ -1,11 +1,52 @@
 $(document).ready(function () {
 
+  window.addEventListener('load', function(){
+  new Glider(document.querySelector('.glider'), {
+      slidesToShow: 1,
+      dots: '#dots',
+      draggable: true,
+      arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next'
+      }
+  })
+});
+
+
+$('#carouselExampleControls').on('slid.bs.carousel', function () {
+    $('.modal').scrollTop(0);
+});
 var particle;
 
  window.onload = function() {
    		particle = Particles.init({
-     		 selector: '.background', connectParticles: 'true'
-    		});	
+     		 selector: '.background', 
+         connectParticles: 'true', 
+         responsive: [
+         {
+            breakpoint: 768,
+            options: {
+              maxParticles: 50,
+              connectParticles: true
+            }
+         }, 
+         {
+            breakpoint: 425,
+            options: {
+              maxParticles: 25,
+              connectParticles: true
+            }
+          }, 
+          {
+            breakpoint: 320,
+            options: {
+              maxParticles: 25,
+              connectParticles: true
+
+            }
+          }
+        ]
+    	});	
   	};
 
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -30,14 +71,68 @@ var particle;
         particle = "";
 
         particle = Particles.init({
-         selector: '.background', connectParticles: 'true', color: '#000000'
-        }); 
+         selector: '.background', 
+         connectParticles: 'true', 
+         color: '#000000',
+        responsive: [
+         {
+            breakpoint: 768,
+            options: {
+              maxParticles: 50,
+              connectParticles: true
+            }
+         }, 
+         {
+            breakpoint: 425,
+            options: {
+              maxParticles: 25,
+              connectParticles: true
+            }
+          }, 
+          {
+            breakpoint: 320,
+            options: {
+              maxParticles: 25,
+              connectParticles: true
+
+            }
+          }
+        ]
+      }); 
+ 
+    
       } else {
           particle = "";
 
           particle = Particles.init({
-           selector: '.background', connectParticles: 'true', color: '#FFFFFF'
-          }); 
+           selector: '.background', 
+           connectParticles: 'true', 
+           color: '#FFFFFF',
+           responsive: [
+         {
+            breakpoint: 768,
+            options: {
+              maxParticles: 50,
+              connectParticles: true
+            }
+         }, 
+         {
+            breakpoint: 425,
+            options: {
+              maxParticles: 25,
+              connectParticles: true
+            }
+          }, 
+          {
+            breakpoint: 320,
+            options: {
+              maxParticles: 25,
+              connectParticles: true
+
+            }
+          }
+        ]
+      }); 
       }
 
   });

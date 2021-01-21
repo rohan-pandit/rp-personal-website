@@ -1,0 +1,22 @@
+{
+  "name": "rp-personal-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass scss/ -o css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohan-pandit/rp-personal-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohan-pandit/rp-personal-website/issues"
+  },
+  "homepage": "https://github.com/rohan-pandit/rp-personal-website#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
