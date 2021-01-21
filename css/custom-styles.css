@@ -52,7 +52,7 @@ body .navbar.navbar-dark{
 
 }
 
-.dark-mode #about {
+.dark-mode #personal-interests {
 
 }
 
@@ -78,7 +78,7 @@ body.light-mode {
 
 }
 
-.light-mode #about {
+.light-mode #personal-interests {
 
 }
 
@@ -151,8 +151,20 @@ section {
     letter-spacing: 1px;
 }
 
-#about {
+#personal-interests {
 	background: #E8E8E8;
+}
+
+#personal-interests .personal-interests-container {
+	text-align: center;
+}
+
+#personal-interests .personal-interests-container img {
+	max-width: 100%;
+}
+
+#personal-interests .personal-interests-container .col:nth-of-type(even) {
+	margin-top: 150px;
 }
 
 #section3 {
