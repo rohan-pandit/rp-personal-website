@@ -47,11 +47,6 @@ var particle;
       });
   });
 
-
-  $('#easter-egg').on('click', function () {
-    alert('Victoria is a cunt');
-  });
-
   $('.mode-toggle').on('click', function() {
 
 //window.setTimeout(function() {
