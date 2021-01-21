@@ -192,6 +192,16 @@ canvas {
 	#personal-summary .row {
 		margin-top: 0px;
 	}
+
+	#personal-interests .carousel-item p {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	#personal-interests .personal-interests-container img {
+		max-width: 70%;
+	}
+
 }
 
 /*// Medium devices (tablets, less than 992px)
